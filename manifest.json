@@ -1,0 +1,25 @@
+{
+  "name": "Disable saving the page",
+  "version": "0.1",
+  "description": "Disable saving the page",
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "activeTab",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "commands": {
+    "stop-saving": {
+      "description": "stop saving",
+      "global": true,
+      "suggested_key": {
+        "default": "Ctrl+S"
+      }
+    }
+  },
+  "manifest_version": 2
+}
